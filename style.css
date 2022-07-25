@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-size: 24px;
+  border-radius: 10px;
+  border: 2px solid #5c940d;
+  background-color: #d8f5a2;
+}
+
+button:active {
+  opacity: 0.1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 80px 80px 80px 80px 80px 80px;
+  border: 8px solid #5c940d;
+  border-radius: 8px;
+  background-color: #c0eb75;
+}
+
+#display {
+  grid-column: 1 / 5;
+  background-color: #d8f5a2;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 46px;
+  border: 3px solid #c0eb75;
+  border-radius: 10px;
+}
+
+.clear {
+  grid-column: 1/3;
+  background-color: #74b816;
+}
+
+.divide,
+.multiply,
+.subtract,
+.add,
+.equal {
+  background-color: #a9e34b;
+}
+
+.num0 {
+  grid-column: 1/3;
+}
+
+/* .icon {
+  background: url("backspace-outline.svg");
+  z-index: 1;
+} */
